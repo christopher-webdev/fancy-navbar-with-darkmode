@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+.counter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the section take up the full viewport height */
+ 
+}
+         
+.counter-container {
+  text-align: center; /* Center-align the content horizontally */
+}
+
+#counter {
+  margin: 0; /* Reset margin to remove default spacing */
+  font-size: 3rem; /* Adjust font size as needed */
+}
+
+.button-group {
+  margin-top: 1rem; /* Add spacing between the counter and buttons */
+}
+
+.i,
+#r,
+#d {
+  margin: 0 0.5rem; /* Add spacing between the buttons */
+}
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color:#242424;
+  display: flex;
+  color: beige;
+  
+  
+}
+
+
+
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: none;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  width: 20px;
+  height: 2px;
+  display:flex;
+  position: relative;
+}
+
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+  content: "";
+  background-color: white;
+  width: 20px;
+  height: 2px;
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.nav-item {
+  margin: 0 0.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+.form-control {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-outline-success {
+  border: 1px solid #28a745;
+  color: #28a745;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .navbar-toggler {
+      display: block;
+  }
+  
+  #navbarNav.show {
+      display:inline-flex;
+      flex-direction:column;
+      position: relative;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      margin: 0;
+      padding: 1rem;
+  }
+
+
+  .navbar-form {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1rem;
+  }
+
+  .form-control {
+      margin-bottom: 0.5rem;
+  }
+
+  .navbar-toggler-icon {
+      background-color: white;
+      width: 20px;
+      height: 2px;
+      display: block;
+      position: relative; 
+  } 
+  .navbar-nav {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    display: none; 
+}
+
+
+.nav-item {
+    margin: 0.5rem 0;
+    text-align: center; /* Center-align the items in the roll */
+}
+
+  .navbar-toggler-icon:before,
+  .navbar-toggler-icon:after {
+      content: "";
+      background-color: white;
+      width: 20px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      left: 0;
+  }
+
+  .navbar-toggler-icon:after {
+      top: 6px;
+  }
+
+  .navbar-toggler-icon:before {
+      bottom: 6px;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white;
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: relative;
+}
+}
+/* Your existing CSS styles */
+/* ... */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+

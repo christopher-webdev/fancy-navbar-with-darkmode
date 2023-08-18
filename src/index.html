@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning practice</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          
+            <button class="navbar-toggler" id="navbarToggleBtn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="logo.svg" width="80%"></a></img>
+            <ul class="navbar-nav" id="navbarNav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <form class="navbar-form">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="dark-mode-toggler">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                   
+                </label>
+                <p>Dark Mode</p> <!-- Add the text label here -->
+            </div>
+            
+        </div>
+    </nav>
+       
+    <section class="counter-section">
+        <div class="counter-container">
+            <h1 id="counter">0</h1>
+            <div class="button-group">
+                <button class="i">Increase</button>
+                <button id="r">Reset</button>
+                <button id="d">Decrease</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container text-center">
+            <small>&copy; Christopher_WebDev 2023</small>
+        </div>
+    </footer>
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+    
+        darkModeToggle.addEventListener("change", () => {
+            if (darkModeToggle.checked) {
+                body.classList.add("dark-mode");
+            } else {
+                body.classList.remove("dark-mode");
+            }
+        });
+    </script>
+    
+    <script src="aa.js"></script>
+</body>
+</html>
